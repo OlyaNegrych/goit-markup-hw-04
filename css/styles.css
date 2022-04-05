@@ -358,7 +358,6 @@ color: var(--text-color);
     display: inline-flex;
     width: 44px;
     height: 44px;
-    outline: 1px solid red;
     border-radius: 50%;
 }
 
@@ -375,7 +374,25 @@ color: var(--text-color);
     margin-left: 10px;
 }
 
-.intagram {
+.instagram {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.twitter {
+    display: inline-block;
+    width: 20px;
+    height: 16.25px; 
+}
+
+.facebook {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+}
+
+.linkedin {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -584,6 +601,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .connect-title {
+margin-bottom: 20px;
+
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -593,3 +612,22 @@ text-transform: uppercase;
 color: var(--background-color);
 }
 
+.footer-address {
+    margin-right: 70px;
+}
+
+.footer-soc-sites {
+    display: flex;
+}
+
+.connection {
+    margin-top: 72px;
+}
+
+.soc-sites-item {
+    margin-right: 10px;
+}
+
+.soc-link {
+    background: rgba(255, 255, 255, 0.1);
+}
