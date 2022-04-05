@@ -25,6 +25,19 @@ ul {
     padding: 0;
 }
 
+li {
+list-style-type: none;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+/* img {
+    display: block;
+} */
+
 /* Header */
 .section {
     padding-top: 94px;
@@ -94,7 +107,7 @@ color: var(--accent-color);
 }
 
 .auth-nav-item:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .nav-list-link {
@@ -117,7 +130,7 @@ color: var(--accent-color);
 }
 
 .auth-nav-link {
-display: inline-block;
+display: inline-flex;
 padding: 32px 0;
 
 font-weight: 500;
@@ -133,13 +146,24 @@ color: var(--text-color);
 color: var(--accent-color);
 }
 
-li {
-list-style-type: none;
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+
+.auth-nav-link.envelope:hover .envelope {
+    color: var(--accent-color);
 }
 
-a {
-color: inherit;
-text-decoration: none;
+.tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.auth-nav-link.tel:hover .tel {
+color: var(--accent-color);
 }
 
 /* Студия */
@@ -147,14 +171,20 @@ text-decoration: none;
 .current {
 color: var(--accent-color);
 }
+
 /* Герой */
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
 
     background-color: var(--footer-color);
+    background-image: url(../images/bgr-img-hero.jpg);
+    max-width: 1600px;
+    
     text-align: center;
    }
+
 .hero-title {
     margin-bottom: 30px;
     font-size: 44px;
@@ -165,6 +195,7 @@ color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 0.06em;
     }
+
 .button {
 display: inline-block;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -197,6 +228,21 @@ display: none;
 
 .advantages-list {
     display: flex;
+}
+
+.icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.icon > svg {
+ display: inline-flex;
+ width: 70px;
+ height: 70px;
+ background-position: center;
 }
 
 .advantages-item {
@@ -295,15 +341,121 @@ margin-bottom: 10px;
 }
 
 .position {
-margin-bottom: 30px;
+margin-bottom: 16px;
 
 color: var(--text-color);
+}
+
+.soc-sites {
+    display: flex;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.soc-link {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    outline: 1px solid red;
+    border-radius: 50%;
+}
+
+.soc-link:hover {
+    background-color: var(--accent-color);
+}
+
+.soc-link:hover .instagram {
+    fill: #fff;
+    /* fill: #AFB1B8; */
+}
+
+.soc-link-item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.intagram {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Постоянные клиенты */
+
+.clients-title {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
+.clients-list {
+    display: flex;
+}
+
+.client-link:hover .clients-list-item {
+ border: 1px solid var(--accent-color);
+ }
+
+ .client-link:hover .client-icon {
+ fill: var(--accent-color);  
+ }
+.client-icon {
+    display: inline-flex;
+    background-position: center;
+}
+
+.icon-1 {
+    width: 41px;
+    height: 46.7px;
+}
+
+.icon-2 {
+    width: 40px;
+    height: 52px;
+}
+
+.icon-3 {
+    width: 43.46px;
+    height: 41.18px;
+}
+
+.icon-4 {
+    width: 84.44px;
+    height: 40.62px;
+}
+
+.icon-5 {
+    width: 62.54px;
+    height: 45.43px;
+}
+
+.icon-6 {
+    width: 93.79px;
+    height: 43.93px;
+}
+
+.clients-list-item {
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-list-item:not(:first-child) {
+margin-left: 30px;
 }
 
 /* Портфолио */
 
 .portfolio {
-  background-color: var(--background-color);
+  background-color: var(--thirdly-bgr-color)
   border-top: 1px solid #ECECEC;  
 }
 
@@ -395,6 +547,10 @@ footer .container {
     padding-bottom: 60px;
 }
 
+.footer {
+    display: flex;
+}
+
 .logo-footer {
 margin-top: 60px;
 margin-bottom: 20px;
@@ -425,5 +581,15 @@ color: rgba(255, 255, 255, 0.6);
 
 .item.mail {
     margin-bottom: 9px;
+}
+
+.connect-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--background-color);
 }
 
