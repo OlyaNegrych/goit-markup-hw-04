@@ -174,7 +174,7 @@ color: var(--accent-color);
 
     background-color: var(--footer-color);
     background-image: 
-    linear-gradient(rgba(47, 48, 58, 0.4)), 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url(../images/bgr-img-hero.jpg);
     
     text-align: center;
@@ -323,33 +323,30 @@ border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
 }
 
-.name,
-.position {
+.teem-thumb {
+    padding: 30px 32px;
+}
+
+.name {
+margin-bottom: 10px;
+
 font-size: 16px;
 line-height: 1.19;
 font-weight: 500;
 color: var(--title-text-color);
 }
 
-.teem-item img {
-margin-bottom: 30px;
-}
-
-.name {
-margin-bottom: 10px;
-}
-
 .position {
 margin-bottom: 16px;
 
+font-size: 16px;
+line-height: 1.19;
+font-weight: 400;
 color: var(--text-color);
 }
 
 .soc-sites {
     display: flex;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-bottom: 30px;
     justify-content: center;
 }
 
@@ -415,6 +412,8 @@ margin-left: 30px;
 
 .client-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
 }
@@ -430,11 +429,7 @@ margin-left: 30px;
 }
 
 .client-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    fill: var(--icon-color);
+   fill: var(--icon-color);
 }
 
 /* Портфолио */
@@ -502,6 +497,10 @@ background-color: var(--accent-color);
 
 .portfolio-list-item {
 width: 370px;
+}
+
+.portfolio-list-link {
+    display: block;
 }
 
 .portfolio-list-link:hover .portfolio-list-item,
