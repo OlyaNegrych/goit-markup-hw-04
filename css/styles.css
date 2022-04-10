@@ -402,8 +402,6 @@ color: var(--title-text-color);
 
 .clients-list-item {
     display: flex;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
 }
 
 .clients-list-item:not(:first-child) {
@@ -416,11 +414,13 @@ margin-left: 30px;
     justify-content: center;
     width: 170px;
     height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
 }
 
-.client-link:hover .clients-list-item,
-.client-link:focus .clients-list-item {
-  border-color: var(--accent-color);
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
  }
 
 .client-link:hover .client-icon,
@@ -439,7 +439,7 @@ margin-left: 30px;
 }
 
 .portfolio-title {
-display: none;
+ display: none;
 }
 
 .filtr {
@@ -503,8 +503,8 @@ width: 370px;
     display: block;
 }
 
-.portfolio-list-link:hover .portfolio-list-item,
-.portfolio-list-link:focus .portfolio-list-item {
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
